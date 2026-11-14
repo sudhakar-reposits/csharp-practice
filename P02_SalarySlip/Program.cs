@@ -1,10 +1,10 @@
-﻿var basic=50000;
-Decimal hra=40,da=10,pf=12;
-var hraVal=basic*hra/100;
-var daVal=basic*da/100;
-var pfVal=basic*pf/100;
-var Gross=basic+hraVal+daVal;
-var netVal=Gross-pfVal;
+﻿decimal basic=50000m;
+const decimal hra=0.40m,da=0.10m,pf=0.12m;
+decimal hraVal=basic*hra;
+decimal daVal=basic*da;
+decimal pfVal=basic*pf;
+decimal Gross=basic+hraVal+daVal;
+decimal netVal=Gross-pfVal;
 Console.WriteLine("""
 ===========================
         SALARY SLIP
