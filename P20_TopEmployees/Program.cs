@@ -13,8 +13,8 @@ var top3=emps
 Console.WriteLine("Top 3 Salary:");
 int rank=1;
 foreach (var emp in top3)
-    Console.WriteLine($"{rank}. {emp.Name,-7} {emp.Dept,-7} {emp.Salary:N0}");
-    rank++;
+    Console.WriteLine($"{rank++}. {emp.Name,-7} {emp.Dept,-7} {emp.Salary:N0}");
+   // rank++;
 
 int pageNo=2,pageSize=2;
 var noPage=emps.OrderBy(e=>e.Name)
